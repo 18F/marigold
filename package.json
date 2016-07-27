@@ -1,0 +1,25 @@
+{
+  "name": "marigold",
+  "version": "0.1.0",
+  "description": "A set of common and reusable components and tools for building websites and applications at 18F.",
+  "scripts": {
+    "build": "fractal build",
+    "start": "fractal start --sync"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/18F/marigold.git"
+  },
+  "author": "18F",
+  "contributors": [
+    "Julia Elman <julia.elman@gsa.gov>"
+  ],
+  "license": "SEE LICENSE in LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/18F/marigold/issues"
+  },
+  "homepage": "https://github.com/18F/marigold#readme",
+  "dependencies": {
+    "@frctl/fractal": "^1.0.4"
+  }
+}
