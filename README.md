@@ -15,7 +15,7 @@ You will need to make sure that you have the following installed on your machine
 To start, run the following command to install project dependencies:
 
 ```sh
-npm run install
+npm install
 ```
 
 Next, we'll perform a build step to create the site and test the build process:
