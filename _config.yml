@@ -1,5 +1,7 @@
 source: build
 
+baseurl: ''
+
 include:
 - _theme
 
