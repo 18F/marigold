@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "A set of common and reusable components and tools for building websites and applications at 18F.",
   "scripts": {
-    "build": "fractal build",
+    "copy": "cp -r build/* ./",
+    "build": "npm run copy && fractal build",
     "start": "fractal start --sync"
   },
   "repository": {
