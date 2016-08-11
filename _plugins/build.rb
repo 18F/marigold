@@ -1,8 +1,4 @@
-# these are the branches for which we build production assets
-branches = ['master', 'staging']
-
 if ENV['BRANCH']
-  puts '[build.rb] building for production'
-  ENV['NODE_ENV'] = 'production'
-  `npm install && npm run build > build.log`
+  puts '[build.rb] building for federalist'
+  `cp -r ./build/* ./`
 end
