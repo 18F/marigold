@@ -2,3 +2,13 @@ source: build
 
 include:
 - _theme
+
+exclude:
+- Gemfile
+- Gemfile.lock
+- package.json
+- CONTRIBUTING.md
+- LICENSE.md
+- README.md
+- src
+- build
