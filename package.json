@@ -12,7 +12,8 @@
   },
   "author": "18F",
   "contributors": [
-    "Julia Elman <julia.elman@gsa.gov>"
+    "Julia Elman <julia.elman@gsa.gov>",
+    "Shawn Allen <shawn.allen@gsa.gov>"
   ],
   "license": "SEE LICENSE in LICENSE.md",
   "bugs": {
