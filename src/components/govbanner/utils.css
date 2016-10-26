@@ -1,0 +1,8 @@
+.usa-end-row {
+  margin-right: 0;
+}
+
+.usa-sr-only {
+  position: absolute;
+  left: -999em;
+}
