@@ -4,8 +4,7 @@
   "description": "A set of common and reusable components and tools for building websites and applications at 18F.",
   "scripts": {
     "build": "fractal build",
-    "start": "fractal start --sync",
-    "federalist": "npm install && npm run build && mv build/* ."
+    "start": "fractal start --sync"
   },
   "repository": {
     "type": "git",
