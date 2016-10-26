@@ -13,4 +13,3 @@ exclude:
 - LICENSE.md
 - README.md
 - src
-- build
