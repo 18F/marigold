@@ -5,7 +5,7 @@
   "scripts": {
     "build": "fractal build",
     "start": "fractal start --sync",
-    "federalist": "(npm install && npm run build) | tee build.log && mv build/* ."
+    "federalist": "npm install && npm run build && mv build/* ."
   },
   "repository": {
     "type": "git",
