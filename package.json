@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/18F/marigold#readme",
   "dependencies": {
-    "@frctl/fractal": "^1.0.4"
+    "@frctl/fractal": "^1.0.8"
   }
 }
