@@ -10,7 +10,7 @@ Marigold is built with [Fractal](http://fractal.build/), a static site framework
 
 You will need to make sure that you have the following installed on your machine before following the commands below.
 
-1. Node v4.4.7+, [Installation guide](https://nodejs.org/en/download/)
+- Node v4.4.7+, [Installation guide, various platforms](https://nodejs.org/en/download/)
 
 To start, run the following command to install project dependencies:
 
@@ -27,7 +27,7 @@ npm run build
 Now that all of your dependencies are installed you can run you local server by running the following command:
 
 ```sh
-npm run start
+npm start
 ```
 
 Go to `localhost:3000` in your browser and you should be viewing a local instance of Marigold.
