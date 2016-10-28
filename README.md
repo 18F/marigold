@@ -10,8 +10,7 @@ Marigold is built with [Fractal](http://fractal.build/), a static site framework
 
 You will need to make sure that you have the following installed on your machine before following the commands below.
 
-- [Node v4.4.7+, Installation guide, various platforms](https://nodejs.org/en/download/)
-1. [Ruby v2.2.2+, Installation guides, various platforms](https://www.ruby-lang.org/en/documentation/installation/)
+- Node v4.4.7+, [Installation guide, various platforms](https://nodejs.org/en/download/)
 
 To start, run the following command to install project dependencies:
 
