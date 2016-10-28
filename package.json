@@ -3,9 +3,12 @@
   "version": "0.2.0",
   "description": "A set of common and reusable components and tools for building websites and applications at 18F.",
   "scripts": {
-    "build": "fractal build",
+    "prestart": "npm run clean && npm run build",
+    "postinstall": "source env.sh",
+    "build": "npm run copy-wds-img && fractal build",
     "clean": "rm -fr build",
-    "start": "fractal start --sync"
+    "start": "fractal start --sync",
+    "copy-wds-img": "cp -r node_modules/uswds/dist/img src/assets/uswds"
   },
   "repository": {
     "type": "git",
@@ -22,6 +25,7 @@
   },
   "homepage": "https://github.com/18F/marigold#readme",
   "dependencies": {
-    "@frctl/fractal": "^1.0.8"
+    "@frctl/fractal": "^1.0.8",
+    "uswds": "^0.13.1"
   }
 }
