@@ -213,11 +213,16 @@
 
 <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">media</span>=<span class="hljs-string">"all"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../css/main.css"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Marigold<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+        <span class="hljs-selector-tag">body</span> {
+            <span class="hljs-attribute">font-family</span>: <span class="hljs-string">"Source Sans Pro"</span>, Helvetica, sans-serif;
+            <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
+        }
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"preview"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 
@@ -233,15 +238,20 @@
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">media</span>=<span class="hljs-string">"all"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ path '/css/main.css' }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Marigold<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
     </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">each</span></span> _target.resources.assets}}</span><span class="xml">
       </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> isCSS}}</span><span class="xml">
         <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ path '/components/raw/{{ _target.baseHandle }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">/</span></span></span><span class="hljs-template-variable">{{ this.base }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">' }}"</span>&gt;</span>
       </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
     </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">each</span></span>}}</span><span class="xml">
+    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+      <span class="hljs-selector-tag">body</span> {
+        <span class="hljs-attribute">font-family</span>: <span class="hljs-string">"Source Sans Pro"</span>, Helvetica, sans-serif;
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
+      }
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"preview"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
 
 </span><span class="hljs-template-variable">{{{ <span class="hljs-builtin-name">yield</span> }}</span><span class="xml">}
 
@@ -344,6 +354,54 @@
 <div class="Tree" data-behaviour="tree" id="tree-components">
     <h3 class="Tree-title">Components</h3>
     <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="govbanner.html" data-pjax>
+                <span>Govbanner</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="header.html" data-pjax>
+                <span>Header</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
         
     
         
