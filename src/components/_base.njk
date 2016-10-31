@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Marigold</title>
+    {% for asset in _target.resources.assets %}
+      {% if asset.isCSS %}
+    <link rel="stylesheet" href="{{ ('/components/raw/' + _target.baseHandle + '/' + asset.base) | path }}">
+      {% endif %}
+    {% endfor %}
+    {% block styles %}
+    <style>
+      body {
+        font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+        padding: 20px;
+      }
+    </style>
+    {% endblock %}
+  </head>
+  <body>
+    {% block main %}{{ yield }}{% endblock %}
+
+    {% block scripts %}{% endblock %}
+    {% for asset in _target.resources.assets %}
+      {% if asset.isJS %}
+    <script src="{{ ('/components/raw/' + _target.baseHandle + '/' + asset.base) | path }}"></script>
+      {% endif %}
+    {% endfor %}
+  </body>
+</html>

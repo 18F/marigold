@@ -4,11 +4,20 @@ const fractal = module.exports = require('@frctl/fractal').create();
 
 fractal.set('project.title', 'Marigold');
 
-fractal.components.set('path', __dirname + '/src/components');
-fractal.components.set('default.preview', '@preview');
+// use Nunjucks as the templating engine
+fractal.components.engine(require('@frctl/nunjucks')({
+  filters: require('./lib/template-filters')
+}));
 
-fractal.docs.set('path', __dirname + '/src/docs');
+const src = __dirname + '/src';
 
-fractal.web.set('static.path', __dirname + '/src/assets');
+fractal.components.set('ext', '.njk');
+fractal.components.set('path', src + '/components');
+fractal.components.set('default.preview', '@base');
+
+fractal.docs.set('path', src + '/docs');
+
+fractal.web.set('static.path', src + '/assets');
 fractal.web.set('static.mount', 'assets');
+
 fractal.web.set('builder.dest', __dirname + '/build');
