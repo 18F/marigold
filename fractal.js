@@ -11,9 +11,9 @@ fractal.components.engine(require('@frctl/nunjucks')({
 
 const src = __dirname + '/src';
 
-fractal.components.set('ext', '.html');
+fractal.components.set('ext', '.njk');
 fractal.components.set('path', src + '/components');
-fractal.components.set('default.preview', '@preview');
+fractal.components.set('default.preview', '@base');
 
 fractal.docs.set('path', src + '/docs');
 
