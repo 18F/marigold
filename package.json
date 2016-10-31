@@ -5,7 +5,7 @@
   "scripts": {
     "prestart": "npm run clean && npm run build",
     "postinstall": "source env.sh",
-    "build": "npm run copy-wds-img && fractal build",
+    "build": "npm run copy-wds-img && `npm bin`/fractal build",
     "clean": "rm -fr build",
     "start": "fractal start --sync",
     "copy-wds-img": "cp -r node_modules/uswds/dist/img src/assets/uswds"
