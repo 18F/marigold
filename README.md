@@ -30,4 +30,4 @@ Now that all of your dependencies are installed you can run you local server by 
 npm start
 ```
 
-Go to `localhost:3000` in your browser and you should be viewing a local instance of Marigold.
+Go to `http://localhost:3000` in your browser, and you should be viewing a local instance of Marigold.
