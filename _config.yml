@@ -4,3 +4,12 @@ source: build
 
 include:
   - _theme
+
+exclude:
+  - '/*.md'
+  - '*.sh'
+  - fractal.js
+  - node_modules
+  - package.json
+  - src
+  - Gemfile*
