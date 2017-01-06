@@ -27,6 +27,7 @@
   "dependencies": {
     "@frctl/fractal": "^1.0.8",
     "@frctl/mandelbrot": "^1.0.7",
+    "@frctl/nunjucks": "^1.0.1",
     "uswds": "^0.13.1"
   }
 }
