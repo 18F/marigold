@@ -1,13 +1,6 @@
 baseurl: ''
 
-include:
-- _theme
+source: build
 
-exclude:
-- Gemfile
-- Gemfile.lock
-- package.json
-- CONTRIBUTING.md
-- LICENSE.md
-- README.md
-- src
+include:
+  - _theme
