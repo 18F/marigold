@@ -10,6 +10,11 @@ fractal.web.theme(theme);
 
 fractal.set('project.title', 'Marigold');
 
+// these values are merged into each component's context data
+fractal.components.set('default.context', {
+  asset_path: '../../assets/'
+});
+
 fractal.components.set('path', __dirname + '/src/components');
 fractal.components.set('default.preview', '@preview');
 
