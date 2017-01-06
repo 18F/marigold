@@ -1,3 +1,3 @@
 if [ ! -d "src/assets/uswds" ]; then
-  mkdir src/assets/uswds
+  mkdir -p src/assets/uswds
 fi
