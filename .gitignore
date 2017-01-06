@@ -1,4 +1,5 @@
-_site
 .DS_store
+_site
+build
 node_modules/
 *.log
