@@ -10,8 +10,8 @@ Global style for all things [cloud.gov](https://cloud.gov).
 ## [Draft U.S. Web Design Standards](https://standards.usa.gov)
 A group of open-source UI components and visual styles to create beautiful, consistent experiences across federal government websites.
 
-## [Federal Election Commision Website Styleguide](https://pages.18f.gov/fec-style/)
-Shared styles and user interface components for the betaFEC website.
+## [Federal Election Commision Website Styleguide](https://fec-pattern-library.apps.cloud.gov/)
+A collection of styles and design patterns that make up beta.FEC.gov
 
 ## [CALC Style Guide](https://calc-dev.apps.cloud.gov/styleguide/)
 Shared styles and user interface components for CALC.
