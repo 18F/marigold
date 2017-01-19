@@ -1,5 +1,6 @@
 ---
 title: 18F Component library reference
+status: beta
 ---
 
 Some 18F projects have their own styleguides and component libraries specific to client and user needs. Below is a curated list of each of these libraries:

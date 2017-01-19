@@ -21,6 +21,25 @@ fractal.components.set('path', src + '/components');
 fractal.components.set('default.preview', '@base');
 
 fractal.docs.set('path', src + '/docs');
+fractal.docs.set('default.status', 'alpha');
+fractal.docs.set('statuses', {
+    alpha: {
+        label: "Alpha",
+        description: "",
+        color: '#02bfe7'
+    },
+    beta: {
+        label: "Beta",
+        description: "",
+        color: "#205493"
+    },
+    recommended: {
+        label: "Recommended",
+        description: "",
+        color: "2e8540"
+    }
+});
+
 
 fractal.web.set('static.path', src + '/assets');
 fractal.web.set('static.mount', 'assets');

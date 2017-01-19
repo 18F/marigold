@@ -1,5 +1,6 @@
 ---
 title: Marigold
+status: alpha
 ---
 
 A set of reusable components and tools for building websites and applications at 18F. The goal of Marigold is to gather and store patterns and reference materials that help every project at 18F build useful, delightful experiences. Our hope is that this will help us record what we learn and save us all time.
