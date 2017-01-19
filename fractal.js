@@ -31,7 +31,6 @@ fractal.components.set('default.preview', '@base');
 
 fractal.docs.set('path', src + '/docs');
 
-
 fractal.web.set('static.path', src + '/assets');
 fractal.web.set('static.mount', 'assets');
 
