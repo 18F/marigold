@@ -1,0 +1,11 @@
+{% for size in sizes %}
+  <div class="row sans-{{ size }}{% if loop.first %}{% else %} mt2 pt2 bt1px bt-solid bt-lightgray{% endif %}">
+    <p class="fw600 m0 p0 col-fill lh-single">
+      sans-{{ size }}
+    </p>
+
+    <p class="fw300 m0 p0 w50ct right lh-single">
+      sans-{{ size }}
+    </p>
+  </div>
+{% endfor %}
