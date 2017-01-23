@@ -1,6 +1,15 @@
 'use strict';
 
 const fractal = module.exports = require('@frctl/fractal').create();
+const mandelbrot = require('@frctl/mandelbrot');
+
+const customTheme = mandelbrot({
+  skin: 'blue',
+  styles: [
+    'default',
+    '/assets/css/marigold.css'
+  ]
+});
 
 const sass = require('./lib/sass');
 
@@ -32,3 +41,5 @@ if (command === 'build') {
 } else if (command === 'start') {
   sass.watchDirectory(src);
 }
+
+fractal.web.theme(customTheme);

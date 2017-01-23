@@ -1,0 +1,9 @@
+/* Setting status dot to a filled dot and aligned to the left */
+.Status-dot {
+  border-width: 4px;
+}
+
+.Tree-entityLink .Status {
+  margin: 0 8px 0 0;
+  order: -1;
+}
