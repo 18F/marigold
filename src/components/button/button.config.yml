@@ -1,0 +1,42 @@
+name: Button
+handle: button
+preview: '@uswds-split'
+default: primary
+context:
+  asset_path: '/assets/uswds-0.14.0/'
+variants:
+  - name: primary
+    context:
+      buttonText: Primary
+      buttonType: primary
+      isAlt: false
+  - name: primary-alt
+    context:
+      buttonText: Primary Alt
+      isAlt: true
+      buttonType: primary
+  - name: secondary
+    context:
+      buttonText: Secondary
+      isAlt: false
+      buttonType: secondary
+  - name: secondary-gray
+    context:
+      buttonText: Secondary Gray
+      buttonType: gray
+  - name: secondary-outline
+    context:
+      buttonText: Secondary Outline
+      buttonType: outline
+  - name: secondary-inverse
+    context:
+      buttonText: Secondary Inverse
+      buttonType: inverse
+  - name: disabled
+    context:
+      buttonText: Disabled
+      buttonType: disabled
+  - name: big
+    context:
+      buttonText: Big
+      buttonType: big
