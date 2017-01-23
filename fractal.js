@@ -25,17 +25,17 @@ fractal.docs.set('default.status', 'alpha');
 fractal.docs.set('statuses', {
     alpha: {
         label: "Alpha",
-        description: "",
+        description: "First draft of documentation is written.",
         color: '#02bfe7'
     },
     beta: {
         label: "Beta",
-        description: "",
+        description: "Documentation has been reviewed and needs final evaluation before recommended.",
         color: "#205493"
     },
     recommended: {
         label: "Recommended",
-        description: "",
+        description: "Documentation, including context of use rationale, is complete.",
         color: "2e8540"
     }
 });
