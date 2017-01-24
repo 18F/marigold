@@ -1,3 +1,5 @@
 .DS_store
+_site
+build
 node_modules/
-npm-debug.log
+*.log

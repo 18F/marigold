@@ -1,5 +1,4 @@
 name: Government banner
 handle: govbanner
 preview: '@uswds'
-context:
-  asset_path: '/assets/uswds/'
+context: {}

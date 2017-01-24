@@ -1,16 +1,15 @@
-source: build
-
 baseurl: ''
 
+source: build
+
 include:
-- _theme
+  - _theme
 
 exclude:
-- Gemfile
-- Gemfile.lock
-- package.json
-- CONTRIBUTING.md
-- LICENSE.md
-- README.md
-- src
-- build
+  - '/*.md'
+  - '*.sh'
+  - fractal.js
+  - node_modules
+  - package.json
+  - src
+  - Gemfile*

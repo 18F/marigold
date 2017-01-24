@@ -11,6 +11,12 @@ const customTheme = mandelbrot({
   ]
 });
 
+const theme = require('@frctl/mandelbrot')({
+  skin: 'white'
+});
+
+fractal.web.theme(theme);
+
 const sass = require('./lib/sass');
 
 // XXX detect the CLI command
@@ -19,6 +25,11 @@ const command = process.argv[2];
 const src = __dirname + '/src';
 
 fractal.set('project.title', 'Marigold');
+
+// these values are merged into each component's context data
+fractal.components.set('default.context', {
+  asset_path: '../../assets/'
+});
 
 // use Nunjucks as the templating engine
 fractal.components.engine(require('@frctl/nunjucks')({

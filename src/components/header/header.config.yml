@@ -1,4 +1,3 @@
 title: Header
 preview: '@uswds'
-context:
-  asset_path: '/assets/uswds/'
+context: {}
