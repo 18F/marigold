@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Marigold</title>
+    <link rel="stylesheet" href="{{ '/assets/united/united.css' | path }}">
     {% for asset in _target.resources.assets %}
       {% if asset.isCSS %}
     <link rel="stylesheet" href="{{ ('/components/raw/' + _target.baseHandle + '/' + asset.base) | path }}">
