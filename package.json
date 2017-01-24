@@ -25,6 +25,7 @@
   "homepage": "https://github.com/18F/marigold#readme",
   "dependencies": {
     "@frctl/fractal": "^1.0.8",
+    "@frctl/mandelbrot": "^1.0.7",
     "@frctl/nunjucks": "^1.0.1",
     "anymatch": "^1.3.0",
     "chokidar": "^1.6.1",

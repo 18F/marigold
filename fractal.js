@@ -1,6 +1,15 @@
 'use strict';
 
 const fractal = module.exports = require('@frctl/fractal').create();
+const mandelbrot = require('@frctl/mandelbrot');
+
+const customTheme = mandelbrot({
+  skin: 'blue',
+  styles: [
+    'default',
+    '/assets/css/marigold.css'
+  ]
+});
 
 const sass = require('./lib/sass');
 
@@ -54,6 +63,25 @@ fractal.components.set('statuses', {
 });
 
 fractal.docs.set('path', src + '/docs');
+fractal.docs.set('default.status', 'alpha');
+fractal.docs.set('statuses', {
+    alpha: {
+        label: "Alpha",
+        description: "First draft of documentation is written.",
+        color: '#02bfe7'
+    },
+    beta: {
+        label: "Beta",
+        description: "Documentation has been reviewed and needs final evaluation before recommended.",
+        color: "#205493"
+    },
+    recommended: {
+        label: "Recommended",
+        description: "Documentation, including context of use rationale, is complete.",
+        color: "2e8540"
+    }
+});
+
 
 fractal.web.set('static.path', src + '/assets');
 fractal.web.set('static.mount', 'assets');
@@ -65,3 +93,5 @@ if (command === 'build') {
 } else if (command === 'start') {
   sass.watchDirectory(src);
 }
+
+fractal.web.theme(customTheme);
