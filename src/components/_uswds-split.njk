@@ -14,7 +14,13 @@
 
   </head>
   <body>
+    <div style="background: #fff;  padding: 20px;">
     {% block main %}{{ yield }}{% endblock %}
+  </div>
+
+<div style="background: #323a45;  padding:20px;">
+  {% block mainInverse %}{{ yield }}{% endblock %}
+</div>
     {% block scripts %}
   <script src="{{ '/assets/uswds-0.14.0/js/uswds.min.js' | path }}"></script>
     {% endblock %}

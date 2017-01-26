@@ -1,5 +1,5 @@
 name: Government banner
 handle: govbanner
-preview: '@uswds'
+preview: '@uswds-split'
 context:
-  asset_path: '/assets/uswds/'
+  asset_path: '/assets/uswds-0.14.0/'
